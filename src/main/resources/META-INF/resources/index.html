@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ha-bapp - 1.0.0-SNAPSHOT</title>
+    <style>
+        .lead {
+            font-weight: 300;
+            font-size: 2rem;
+        }
+
+        .banner {
+            font-size: 2.7rem;
+            margin: 0;
+            padding: 2rem 1rem;
+            background-color: #00A1E2;
+            color: white;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        code {
+            font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 87.5%;
+            color: #e83e8c;
+            word-break: break-word;
+        }
+
+        .left-column {
+            padding: .75rem;
+            max-width: 75%;
+            min-width: 55%;
+        }
+
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        .no-deco {
+            text-decoration: none;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="banner lead">
+    <a class="no-deco" href="https://www.bytexpert.io/Hexagonal-Architecture-in-Java/">Hexagonal Architecture in Java
+    </a>
+</div>
+
+<div class="container">
+    <div class="left-column">
+        <p class="lead">Request</p>
+
+        <code>
+            curl --location --request POST 'localhost:8080/weather' <br/>
+            --header 'Content-Type: application/json' <br/>
+            --data-raw '{ <br/>
+            "location": "Kairouan",<br/>
+            "value": 42<br/>
+            }'
+        </code>
+
+        <p class="lead">Response</p>
+        <code>
+            {<br/>
+            "message": "Updated request for Kairouan"<br/>
+            }<br/>
+        </code>
+    </div>
+</div>
+
+</body>
+</html>
