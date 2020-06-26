@@ -1,4 +1,4 @@
-# ha-bapp project
+# Hexagonal Architecture ha-bapp project
 
 Demo of Hexagonal Architecture: https://www.bytexpert.io/Hexagonal-Architecture-in-Java/ 
 
